@@ -177,3 +177,91 @@ Task_8();
 */
 
 
+//-----------------------------------------------
+/*
+Задача 10: Напишите программу, которая принимает на вход трёхзначное число 
+и на выходе показывает вторую цифру этого числа.
+456 -> 5
+782 -> 8
+918 -> 1
+*/
+
+/*
+void NumTwo()
+{
+Console.Write("Введите трехзначное число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+int num1 = num/10;
+int num2 = num1%10;
+num = num2;
+Console.WriteLine(num);
+}
+NumTwo();
+*/
+
+
+/*
+11. Напишите программу, которая выводит случайное трёхзначное число и удаляет вторую цифру этого числа.
+void NewTask ()
+{
+int num = new Random().Next (100, 1000);
+int res =  num/10;
+int res1 = num%10;
+
+Console.WriteLine(num);
+Console.WriteLine($"{res}{res1}");
+}
+NewTask ();
+*/
+
+
+/*
+Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, 
+что третьей цифры нет.
+645 -> 5
+78 -> третьей цифры нет
+32679 -> 6
+*/
+
+/*
+void NumThird()
+{
+Console.Write("Введите число, от 1 до 100000:  ");
+int num = Convert.ToInt32(Console.ReadLine());
+int num2 = num%10; 
+if (num2 == 0) Console.WriteLine("В введенном числе нет третьей цифры.");
+else Console.WriteLine($"Третья цифра в числе {num} - {num2}.");
+}
+
+NumThird();
+*/
+
+/*
+Console.Write("Введите число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+string num2 = Convert.ToString(num);
+if (num2.Length > 2) Console.WriteLine($"В числе: {num}, третья цифра: {num2[2]}.");
+else Console.WriteLine($"В числе: {num}, третьей цифры нет.");
+*/
+
+
+
+
+/*
+Задача 15: Напишите программу, которая принимает на вход цифру, 
+обозначающую день недели, и проверяет, является ли этот день выходным.
+6 -> да
+7 -> да
+1 -> нет
+*/
+
+/*
+void WeekDay()
+{
+Console.Write("Введи день недели, цифрой: ");
+int day = Convert.ToInt32(Console.ReadLine());
+if (day == 6 | day == 7) Console.WriteLine("Выходной.");
+else Console.WriteLine("Будний день.");
+}
+WeekDay();
+*/
